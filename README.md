@@ -75,7 +75,7 @@ const app1 = EmailsEditor(container);
 app1.getEmailList();
 ```
 
-You can subscribe to changes in the email list with ```subscribe()```:
+You can subscribe to changes in the email list with ```subscribe()```. When emails are added or deleted you get notification in the console:
 
 ```javascript
 const container = document.querySelector('#emails-editor');
