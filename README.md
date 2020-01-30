@@ -13,7 +13,7 @@
 Download and add to your project:
 
 ```html
-<script src="emails-editor-min.js"></script>
+<script src="emails-editor.min.js"></script>
 ```
 
 ## Styles
@@ -29,7 +29,7 @@ You will also need to include CSS file:
 
 ```html
 <div id="emails-editor"></div>
-<script src="emails-editor-min.js"></script>
+<script src="emails-editor.min.js"></script>
 <script>
   const container = document.querySelector('#emails-editor');
   EmailsEditor(container);
@@ -42,7 +42,7 @@ You can have multiple instances on the page:
 <div id="emails-editor"></div>
 <div id="emails-editor2"></div>
 <div id="emails-editor3"></div>
-<script src="emails-editor-min.js"></script>
+<script src="emails-editor.min.js"></script>
 <script>
     const container = document.querySelector('#emails-editor');
     const app1 = EmailsEditor(container);
