@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #050038;
+}
+
+.emailsEditor {
+    max-width: 540px;
+    height: 300px;
+    background: #F8F8F7;
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.emailsEditor__body {
+    width: 100%;
+    min-height: 204px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.emailsEditor__heading {
+    margin: 0;
+    padding: 32px 50px 24px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.emailsEditor__headingBold {
+    font-weight: bold;
+}
+
+.emailsEditor__innerBox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 440px;
+    height: 96px;
+    margin: 0 50px 24px;
+    padding: 8px 7px;
+    background: #fff;
+    border: 1px solid #C3C2CF;
+    border-radius: 4px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-content: flex-start;
+}
+
+.email {
+    position: relative;
+    display: inline-flex;
+    margin-right: 4px;
+    margin-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 7px;
+    background: rgba(102, 153, 255, 0.2);
+    border-radius: 100px;
+    height: 24px;
+    max-width: 100%;
+}
+
+.email--add {
+    background: none;
+    padding: 0;
+    margin-left: 8px;
+}
+
+.email--invalid,
+.email--edit {
+    background: none;
+}
+
+.email--add .email__input {
+    opacity: 1;
+    position: static;
+    width: auto;
+}
+
+.email--edit .email__content {
+    opacity: 0;
+}
+
+.email--edit .email__delete {
+    visibility: hidden;
+}
+
+.email--edit .email__input {
+    opacity: 1;
+    width: 100%;
+}
+
+.email__content {
+    margin-right: 6px;
+    line-height: 24px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.email--invalid .email__content {
+    border-bottom: 1px dashed #d14836;
+}
+
+.email__delete {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.email__delete svg {
+    position: relative;
+    top: 1px;
+}
+
+.email__input {
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    background: #fff;
+    position: absolute;
+    left: 10px;
+    height: inherit;
+    line-height: inherit;
+    width: calc(100% - 30px);
+    padding: 0;
+    padding-bottom: 2px;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+    font-size: 14px;
+    outline: none;
+    max-width: 100%;
+}
+
+.email__input::placeholder {
+    color: #C3C2CF;
+    font-size: 14px;
+}
+
+.emailsEditor__footer {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 100%;
+    height: 96px;
+    background: #fff;
+}
+
+.emailsEditor__footerButtonWrapper {
+    display: flex;
+    padding: 24px 50px 32px;
+}
+
+.emailsEditor__footerButton {
+    padding: 0 16px;
+    height: 40px;
+    color: #fff;
+    background: #4262FF;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 16px;
+    cursor: pointer;
+    outline: none;
+}
