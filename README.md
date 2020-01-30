@@ -7,7 +7,7 @@
 * No dependencies
 * Modular CSS classes for easy styling
 
-![Emails-editor screenshot](https://ibb.co/5FN9G5T)
+![Emails-editor screenshot](https://i.ibb.co/Q9fZmJ8/Test-task-share-2.png)
 
 ## Installation
 Download and add to your project:
@@ -54,6 +54,8 @@ You can have multiple instances on the page:
     const app3 = EmailsEditor(container3);
 </script>
 ```
+
+In this editor you can add email addresses that will be validated and marked properly (valid or invalid). You can edit or delete rendered emails. When clicked 'Add email' button a random email address will be added to the list. To check number of valid emails in the list click 'Get emails count' button.
 
 ## Methods
 
