@@ -7,6 +7,8 @@
 * No dependencies
 * Modular CSS classes for easy styling
 
+![Emails-editor screenshot](https://ibb.co/5FN9G5T)
+
 ## Installation
 Download and add to your project:
 
